@@ -2,50 +2,57 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestra Empresa</title>
+    
+    <!-- Metainformación solicitada -->
+    <meta name="description" content="Descripción de la página">
+    <meta name="author" content="Tu Nombre">
+    
+    <title>Página con Marcadores y Contenido Incrustado</title>
 </head>
 <body>
 
+    <!-- Encabezado principal solicitado con h1 -->
+    <h1>Mi Página Web con Marcadores</h1>
 
-    <main>
-        <section>
-            <h1>Acerca de Nosotros</h1>
-            <p>Somos una empresa dedicada a ofrecer soluciones web.</p>
-        </section>
-    </main>
+    <p>Haz clic en los siguientes enlaces para navegar rápidamente por la página:</p>
 
     
-    <section>
-        <h2>Nuestros Servicios</h2>
-        
-      
-        <ol type="A">
-            <li>Diseño y desarrollo de páginas web a medida.</li>
-           
-            <li>Mantenimiento y soporte técnico web.</li>
-        </ol>
+    <p>
+        <a href="https://tse4.mm.bing.net/th/id/OIP.NDTqYioupHV3UwzoZywcIgHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">Ir a la sección de la Imagen</a>
+    </p>
+    <p>
+        <a href="https://www.bing.com/videos/riverview/relatedvideo?q=carreras+italia+49+cc+polini+&&mid=25455B9C16822531045725455B9C168225310457&churl=https%3a%2f%2fwww.youtube.com%2fchannel%2fUC1SdGN1HBxIJmSFXOQ2-m1A&FORM=VRDGAR">Ir a la sección del Video</a>
+    </p>
 
-        
-        <a href="https://vedmar.com/" target="_blank" rel="noopener noreferrer">Ver más servicios</a>
-    </section>
+    <hr>
 
-
-
-
+    <!-- Marcador 1: Sección de la Imagen (id="marcador-imagen") -->
+    <h2 id="marcador-imagen">Sección de la Imagen</h2>
     
-<footer>
+    <p>Aquí se muestra una imagen incrustada:</p>
 
-    <a href="mailto:david181208@gmail.com">Enviar correo electrónico</a>
+    <!-- Etiqueta img con sus 4 atributos requeridos: src, alt, width, height -->
+    <img src="https://tse4.mm.bing.net/th/id/OIP.NDTqYioupHV3UwzoZywcIgHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+         alt="Imagen de paisajes naturales" 
+         width="500" 
+         height="400">
 
-   
-    <a href="tel:+34 644 90 17 76">Llamar por teléfono</a>
+    <br><br>
 
-   
-    <p> &copy; Mi Empresa  Todos los derechos reservados</p>
+    <!-- Marcador 2: Sección del Video (id="marcador-video") -->
+    <h2 id="marcador-video">Sección del Video</h2>
+    
+    <p>Aquí se muestra un video de YouTube incrustado:</p>
 
+    <!-- Código de YouTube incrustado con la etiqueta iframe -->
+    <iframe width="560" 
+            height="315" 
+            src="https://www.bing.com/videos/riverview/relatedvideo?q=carreras+italia+49+cc+polini+&&mid=25455B9C16822531045725455B9C168225310457&churl=https%3a%2f%2fwww.youtube.com%2fchannel%2fUC1SdGN1HBxIJmSFXOQ2-m1A&FORM=VRDGAR">Ir a la sección del Video" 
+            title="Video carrera italian race polini" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
 
-
-</footer>
 </body>
 </html>
