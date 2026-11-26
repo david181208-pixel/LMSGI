@@ -1,0 +1,147 @@
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.kaushan-script-regular {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+    --color-fondo: #3b141c;       
+    --color-acento: #f3961c ;        
+    --color-texto: #ffffff;         
+    --color-secundario: #dcdcdc;   
+    --fuente-principal: "Kaushan Script", cursive;
+}
+
+
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+}
+
+
+header, main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--color-acento);
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 100px); 
+    gap: 4rem;
+}
+
+.hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-text h1 {
+    font-family: 'Pacifico', cursive; 
+    color: var(--color-acento);
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+    color: var(--color-secundario);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: var(--color-fondo);
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 12. Estado :hover en los botones */
+.btn:hover {
+    background-color: #ffaa45;
+    transform: translateY(-2px);
+}
+
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
